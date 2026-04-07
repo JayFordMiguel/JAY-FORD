@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Ford | UI/UX Designer</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/jf-logo.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./src/input.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body class="">
+    <div class="overflow-hidden ">
+    <nav id="navbar-placeholder"></nav>
+    <!-- HERO SECTION -->
+    <section id="hero" class="h-[100vh] relative">
+        <canvas id="canvas3d" class="absolute z-[-100]"></canvas>
+        <div  class="flex h-full flex-grow flex-col hero-fluid-px hero-fluid-py items-start justify-end gap-4">
+            <p class="font-mono text-base bg-black text-white py-2 px-2 w-116 max-sm:text-xs max-sm:w-[330px] lg:hidden">[ STATUS: INTERNING / OPEN FOR PROJECTS 2026 ]</p>
+            <div class="flex flex-col flex-shrink">
+                <h1 class="font-serif landing-hero-serif">High Fidelity UI/UX with a</h1>
+                <h1 class="font-display text-fluid-h1-script">Visual Edge</h1>
+            </div>
+            <p class="font-work text-xl max-sm:text-base max-w-[400px]">Designing digital products that perform as well as they look. I build functional interfaces that refuse to be boring corporate templates.</p>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section class="bg-black py-4">
+        <div class="bg-black text-white h-121 flex flex-col justify-center items-center gap-4 border-t border-b section-fluid-px">
+            <div class="">
+            <p class="px-3 py-3 font-mono border w-[212px] max-sm:text-xs max-sm:w-[164px]">[ 01 / PHILOSOPHY ]</p>
+            <p class="font-serif text-white text-fluid-h3-serif max-w-[57rem]">I bridge the gap between rigorous <em>UX research</em> and <em>editorial-grade</em> aesthetics. If it doesn’t look as good as it works, it’s not finished.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex flex-row h-[765px] border-b max-lg:flex-col overflow-hidden">
+            <!-- COL1 -->
+             <div class="overflow-hidden w-[573px] h-[765px] min-w-[573px] bg-black relative object-center flex items-center justify-center">
+                <img src="./assets/icons/jf-logo.svg" alt="jf logo" class="w-[800px] h-[800px] rotate-[16.44deg] m-auto shrink-0 min-w-160 min-h-160">
+                <!-- <div class="bg-black w-[573px] h-[765px]"></div> -->
+             </div>
+            
+            <!-- COL2 -->
+            <div class="text-black flex flex-col flex-grow align-end justify-end section-fluid-px section-fluid-py gap-10">
+                <div class="flex flex-col gap-6 max-sm:gap-4">
+                    <p class="font-mono max-sm:text-xs">[02 / ABOUT ME]</p>
+                    <h2 class="font-serif text-fluid-h2-serif">Who is Jay Ford?</h2>
+                    <p class="font-work text-xl max-sm:text-base">A UI/UX designer and student intern with a penchant for high-fidelity polish. I treat every interface like a magazine spread—meticulous hierarchy, intentional whitespace, and zero room for boring.</p>
+                </div>
+                <a href="#" class="group flex items-center justify-start font-display uppercase py-2 gap-4 w-[16.5rem] hover:text-accent transition-colors">
+                    <span class="font-mono text-xl font-bold flex w-cover max-sm:text-base">READ THE FULL STORY</span>
+                    <svg viewBox="0 0 15 15" fill="none" class="w-4 h-4 stroke-[2.5] transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
+                        <path d="M1.84998 12.6499L12.65 1.84993M1.25 1.25H13.25V13.25" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                </a> 
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section>
+        <div class="flex flex-col section-fluid-px section-fluid-py gap-11">
+            <div class="flex flex-col gap-6">
+                <p class="font-mono max-sm:text-xs">[03 / WORKS]</p>
+                <h2 class="font-serif text-fluid-h2-serif">The Visual Output</h2>
+                <p class="font-work text-xl max-sm:text-base">A collection of digital products, brand identities, and visual experiments.</p>
+            </div>
+
+            <!-- PROJECT ITEM -->
+             <div class="w-full border-t">
+                <a href="#">
+                    <div class="w-full">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                            <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
+                                <p class="font-mono max-sm:text-xs justify-center">2026</p>
+                                <h3 class="font-serif text-fluid-h3-serif project-content-fluid">PAPS PRO BARBERSHOP</h3>
+                                <p class="font-mono max-sm:text-xs project-content-fluid">[ UI/UX / BRANDING / PROTOTYPE ]</p>
+                            </div>
+                            <img src="./assets/icons/upright-arrrow.svg" alt="arrow" class="h-[16px] w-[16px]">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="w-full">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                            <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
+                                <p class="font-mono max-sm:text-xs justify-center">2026</p>
+                                <h3 class="font-serif text-fluid-h3-serif project-content-fluid">POS AND INVENTORY SYSTEM</h3>
+                                <p class="font-mono max-sm:text-xs project-content-fluid">[ PRODUCT DESIGN / POS / LOGIC ]</p>
+                            </div>
+                            <img src="./assets/icons/upright-arrrow.svg" alt="arrow" class="h-[16px] w-[16px]">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="w-full">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                            <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
+                                <p class="font-mono max-sm:text-xs justify-center">2026</p>
+                                <h3 class="font-serif text-fluid-h3-serif project-content-fluid">KWATRO</h3>
+                                <p class="font-mono max-sm:text-xs project-content-fluid">[ IDENTITY / STARTUP BRANDING ]</p>
+                            </div>
+                            <img src="./assets/icons/upright-arrrow.svg" alt="arrow" class="h-[16px] w-[16px]">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="w-full">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                            <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
+                                <p class="font-mono max-sm:text-xs justify-center">2025</p>
+                                <h3 class="font-serif text-fluid-h3-serif project-content-fluid">SIDEQUEST</h3>
+                                <p class="font-mono max-sm:text-xs project-content-fluid">[ UI/UX / BRANDING / PROTOTYPE ]</p>
+                            </div>
+                            <img src="./assets/icons/upright-arrrow.svg" alt="arrow" class="h-[16px] w-[16px]">
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="w-full">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                            <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
+                                <p class="font-mono max-sm:text-xs justify-center">2024</p>
+                                <h3 class="font-serif text-fluid-h3-serif project-content-fluid">HOMIFY</h3>
+                                <p class="font-mono max-sm:text-xs project-content-fluid">[ UI/UX / PRODUCT DESIGN / PROTOTYPE ]</p>
+                            </div>
+                            <img src="./assets/icons/upright-arrrow.svg" alt="arrow" class="h-[16px] w-[16px]">
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section>
+        <div class="bg-black text-white">
+            <!-- row1 -->
+            <div class="section-fluid-px py-[3rem] border-b">
+                <p class="font-mono max-sm:text-xs">[04 / WHAT I DO]</p>
+                <h2 class="font-serif text-fluid-h2-serif">Design Capabilities</h2>
+            </div>
+            <!-- row2 -->
+            <div class="flex flex-row max-sm:flex-col">
+                <div class="flex flex-col gap-8 max-sm:gap-5 section-fluid-px section-fluid-py">
+                    <div class="flex flex-col gap-2">
+                        <p class="font-mono max-sm:text-xs">01</p>
+                        <h3 class="font-serif text-fluid-h3-serif">UI & UX</h3>
+                    </div>
+                    <p class="font-work text-base">Building scalable design systems and high-fidelity prototypes. From complex inventory logic to seamless user flows, I ensure every interaction feels intentional and polished.</p>
+                </div>
+                <div class="flex flex-col gap-8 max-sm:gap-5 section-fluid-px section-fluid-py">
+                    <div class="flex flex-col gap-2">
+                        <p class="font-mono max-sm:text-xs">02</p>
+                        <h3 class="font-serif text-fluid-h3-serif">VISUAL STRATEGY</h3>
+                    </div>
+                    <p class="font-work text-base">Crafting standalone brand identities that refuse to be boring. I specialize in typography-driven design and cohesive visual systems for tech-forward ventures.</p>
+                </div>
+                <div class="flex flex-col gap-8 max-sm:gap-5 section-fluid-px section-fluid-py">
+                    <div class="flex flex-col gap-2">
+                        <p class="font-mono max-sm:text-xs">03</p>
+                        <h3 class="font-serif text-fluid-h3-serif">DEV & MOTION</h3>
+                    </div>
+                    <p class="font-work text-base">Bridging the gap between design and code. Currently exploring the intersection of custom-coded layouts and 3D motion graphics to create immersive web experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA SECTION -->
+    <section>
+        <div class="flex flex-col py-[6rem] section-fluid-px items-center justify-center gap-6">
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col flex-shrink gap-4">
+                    <p class="font-mono text-base max-sm:text-xs">[05 / LET'S WORK]</p>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-fluid-h1-serif">Beyond the</span>
+                        <span class="font-display text-fluid-h1-script">Standard</span>
+                    </div>
+                    <p class="font-work text-xl max-sm:text-base">Designing for the clients who actually care.<br>
+                    No generic grids, no safe bets—just high-fidelity edge.</p>
+                </div>
+
+                <a href="#" class="group flex items-center gap-2 font-display uppercase bg-black text-white py-2 px-2 gap-4 w-[14.5rem] max-sm:w-[11.75rem] max-sm:py-1 max-sm:px-1 hover:text-accent transition-colors">
+                    <span class="font-mono text-xl font-bold max-sm:text-base">SECURE THE EDGE</span>
+                    <svg viewBox="0 0 15 15" fill="none" class="w-4 h-4 stroke-[2.5] transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
+                        <path d="M1.84998 12.6499L12.65 1.84993M1.25 1.25H13.25V13.25" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                </a> 
+            </div>          
+        </div>
+    </section>
+
+    <footer class="">
+        <div>
+            <div class="flex flex-row flex-wrap gap-12 max-sm:flex-col font-mono justify-between section-fluid-px py-[3rem]">
+                <div class="flex flex-col gap-6">
+                    <div class="flex flex-row gap-6">
+                        <img src="./assets/icons/footerlogo.svg" alt="Logo">
+                        <img src="./assets/icons/footer-lettermark.svg" alt="Jay Ford">
+                    </div>
+                    <p class="font-mono max-sm:text-xs">UI/UX & Visual Systems<br>© 2026 / Cabanatuan City, PH<br>jayfordmiguel.neust@gmail.com</p>
+                </div>
+
+                <div class="flex flex-row gap-[6rem] max-sm:text-xs">
+                    <div class="flex flex-col gap-8">
+                        <p>[LOCATE]</p>
+                        <ul>
+                            <li class=""><a href="">01_Home</a></li>
+                            <li class=""><a href="">02_Works</a></li>
+                            <li class=""><a href="">03_About</a></li>
+                            <li class=""><a href="">04_Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col gap-8">
+                        <p>[SYNC]</p>
+                        <ul>
+                            <li class=""><a href="">Behance</a></li>
+                            <li class=""><a href="">LinkedIn</a></li>
+                            <li class=""><a href="">GitHub</a></li>
+                            <li class=""><a href="">Instagram</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="border-t overflow-hidden select-none animate-marquee">
+                <ul class="font-mono text-[4rem] flex flex-row justify-betweeen gap-[2rem] animate-marquee">
+                    <li class="shrink-0">DESIGNED WITH INTENT</li>
+                    <li>-</li>
+                    <li class="shrink-0">JAY FORD EST. 2026</li>
+                    <li>-</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Spline background canvas -->
+    <script type="importmap">
+    {
+        "imports": {
+            "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.11.3/build/runtime.js"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

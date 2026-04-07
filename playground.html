@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYGROUND</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./src/input.css">
+</head>
+
+<body>
+<nav class="w-full relative">
+    <div class="flex flex-row w-full justify-between items-center py-6 hero-fluid-px bg-white z-40 relative border-b-4 border-black">
+        <div class="logo">
+            <a href="/" class="flex gap-4">
+                <div class="bg-black h-10 w-10 flex items-center justify-center">
+                    <img class="h-8 w-8" src="../assets/icons/jf-logo.svg" alt="JAY FORD">
+                </div>
+                <img src="../assets/icons/jayford-lettermark.svg" alt="JAY FORD">
+            </a>
+        </div>
+
+        <div class="flex flex-row gap-6 items-center justify-center">
+            <div class="flex h-full bg-black text-white px-3 py-3 hidden lg:block">
+                <p class="font-mono text-base uppercase">[ STATUS: INTERNING / OPEN FOR PROJECTS 2026 ]</p>
+            </div>
+
+            <button id="menu-open" class="font-mono px-3 py-3 border-4 border-black bg-white hover:bg-black hover:text-white transition-colors">
+                [ MENU ]
+            </button>
+        </div>
+    </div>
+
+    <div id="fullscreen-nav" class="fixed inset-0 z-50 bg-white flex flex-col translate-y-[-100%] transition-transform duration-300 ease-in-out overflow-hidden">
+        
+        <div class="flex flex-row w-full justify-between items-center py-6 hero-fluid-px border-b-4 border-black">
+            <div class="font-black text-xl font-mono">[ NAVIGATION ]</div>
+            <button id="menu-close" class="font-mono px-3 py-3 border-4 border-black bg-black text-white">
+                [ CLOSE ]
+            </button>
+        </div>
+
+        <div class="flex-grow flex flex-col md:flex-row w-full">
+            
+            <div class="flex-grow flex flex-col justify-center p-8 md:p-20 border-b-4 md:border-b-0 md:border-r-4 border-black">
+                <ul class="space-y-4 md:space-y-8">
+                    <li><a href="/" class="text-6xl md:text-9xl font-black hover:italic leading-[0.8] block uppercase">Home</a></li>
+                    <li><a href="/work" class="text-6xl md:text-9xl font-black hover:italic leading-[0.8] block uppercase">Work</a></li>
+                    <li><a href="/about" class="text-6xl md:text-9xl font-black hover:italic leading-[0.8] block uppercase">About</a></li>
+                    <li><a href="/contact" class="text-6xl md:text-9xl font-black hover:italic leading-[0.8] block uppercase">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="w-full md:w-1/3 p-8 flex flex-col justify-between bg-zinc-100">
+                <div>
+                    <h3 class="font-mono text-sm uppercase mb-4 text-zinc-500">// Socials</h3>
+                    <ul class="space-y-2 font-bold text-xl">
+                        <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline">GitHub</a></li>
+                        <li><a href="#" class="hover:underline">Behance</a></li>
+                    </ul>
+                </div>
+
+                <div class="mt-12 md:mt-0">
+                    <h3 class="font-mono text-sm uppercase mb-4 text-zinc-500">// Location</h3>
+                    <p class="font-bold text-xl uppercase">Cabanatuan City, PH</p>
+                    <p class="font-mono text-sm mt-2">15.48° N, 120.97° E</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 border-t-4 border-black">
+            <p class="font-mono text-xs uppercase">© 2026 Jay Ford — Built during OJT period</p>
+        </div>
+    </div>
+</nav>
+
+<script type="module" src="script.js"></script>    
+</body>
+
+</html>

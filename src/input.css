@@ -1,0 +1,158 @@
+
+@font-face {
+  font-family: 'InstrumentSerif';
+  src: url('../assets/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InstrumentSerif';
+  src: url('../assets/fonts/InstrumentSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ImperialScript';
+  src: url('../assets/fonts/ImperialScript-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('../assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'ImperialScript', serif;
+  line-height: 85%;
+}
+
+.font-serif {
+  font-family: 'InstrumentSerif', serif;
+}
+
+.font-mono {
+  font-family: 'RobotoMono', monospace;;
+}
+
+.font-work {
+  font-family: 'WorkSans', sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.4em;
+}
+
+.trim-text {
+  text-box-trim: trim-end;
+  text-box-edge: cap alphabetic;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+@layer utilities {
+
+  .text-fluid-h1-script {
+    font-size: clamp(5.5rem, 1.979rem + 15.02vw, 15.5rem);
+  }
+
+  .landing-hero-serif {
+    font-size: clamp(2.25rem, 1.15rem + 4.69vw, 5.375rem);
+  }
+
+  .text-fluid-h1-serif {
+    font-size: clamp(2.5rem, 1.488rem + 4.32vw, 5.375rem);
+  }
+
+  .text-fluid-h2-serif {
+    font-size: clamp(2.5rem, 1.972rem + 2.25vw, 4rem);
+  }
+
+  .text-fluid-h3-serif {
+    font-size: clamp(1.5rem, 1.236rem + 1.13vw, 2.25rem);
+  }
+
+  .subnav-display {
+    font-size: clamp(3.375rem, 1.746rem + 6.95vw, 8rem);
+    line-height: 1em;
+  }
+
+  /* HERO SECTION PADDING */
+  .hero-fluid-px {
+    padding-left: clamp(1.5rem, 0.972rem + 2.25vw, 3rem);
+    padding-right: clamp(1.5rem, 0.972rem + 2.25vw, 3rem);
+  }
+  .hero-fluid-py {
+    padding-top: clamp(1.5rem, 0.972rem + 2.25vw, 3rem);
+    padding-bottom: clamp(1.5rem, 0.972rem + 2.25vw, 3rem);
+  }
+
+  /* DEFAULT SECTION PADDING */
+  .section-fluid-px {
+    padding-left: clamp(1.5rem, -0.085rem + 6.76vw, 6rem);
+    padding-right: clamp(1.5rem, -0.085rem + 6.76vw, 6rem);
+  }
+
+  .section-fluid-py {
+    padding-top: clamp(3rem, 1.944rem + 4.51vw, 6rem);
+    padding-bottom: clamp(3rem, 1.944rem + 4.51vw, 6rem);
+  }
+
+  /* PROJ CONTAINER WIDTH */
+  .project-content-fluid {
+    width: clamp(17.5rem, 13.099rem + 18.78vw, 30rem);
+  }
+
+}
+
+
+
+@theme {
+
+}

@@ -1,0 +1,50 @@
+/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
+@font-face {
+  font-family: 'InstrumentSerif';
+  src: url('../assets/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InstrumentSerif';
+  src: url('../assets/fonts/InstrumentSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ImperialScript';
+  src: url('../assets/fonts/ImperialScript-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('../assets/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+.font-display {
+  font-family: 'ImperialScript', serif;
+  line-height: 85%;
+}
+.font-serif {
+  font-family: 'InstrumentSerif', serif;
+}
+.font-mono {
+  font-family: 'RobotoMono', monospace;
+}
+.font-work {
+  font-family: 'WorkSans', sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.4em;
+}
