@@ -65,37 +65,6 @@ body {
   text-box-edge: cap alphabetic;
 }
 
-.text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-
 @layer utilities {
 
   .text-fluid-h1-script {
@@ -149,9 +118,34 @@ body {
     width: clamp(17.5rem, 13.099rem + 18.78vw, 30rem);
   }
 
+  /* EVOLUTION SECTION */
+  .evo-content-indent {
+    padding-left:clamp(4rem, 2.68rem + 5.63vw, 7.75rem);
+  }
+
+  .evo-timeline-indent {
+    padding-left: clamp(3rem, 1.944rem + 4.51vw, 6rem);
+  }
+
+  .evo-fluid-branch {
+    width:clamp(2rem, 0.944rem + 4.51vw, 5rem);
+  }
+
 }
 
+.seeMore #hidden-content {
+  display: block;
+}
 
+@keyframes scroll {
+  to{
+    transform: translateX(calc(-100%-20px));
+  }
+}
+
+.marquee-scroll {
+  animation: scroll 20s linear infinite;
+}
 
 @theme {
 

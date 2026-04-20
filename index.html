@@ -39,17 +39,17 @@
     <section>
         <div class="flex flex-row h-[765px] border-b max-lg:flex-col overflow-hidden">
             <!-- COL1 -->
-             <div class="overflow-hidden w-[573px] h-[765px] min-w-[573px] bg-black relative object-center flex items-center justify-center">
+            <div class="overflow-hidden w-[573px] h-[765px] min-w-[573px] bg-black relative object-center flex items-center justify-center">
                 <img src="./assets/icons/jf-logo.svg" alt="jf logo" class="w-[800px] h-[800px] rotate-[16.44deg] m-auto shrink-0 min-w-160 min-h-160">
                 <!-- <div class="bg-black w-[573px] h-[765px]"></div> -->
-             </div>
+            </div>
             
             <!-- COL2 -->
             <div class="text-black flex flex-col flex-grow align-end justify-end section-fluid-px section-fluid-py gap-10">
                 <div class="flex flex-col gap-6 max-sm:gap-4">
                     <p class="font-mono max-sm:text-xs">[02 / ABOUT ME]</p>
                     <h2 class="font-serif text-fluid-h2-serif">Who is Jay Ford?</h2>
-                    <p class="font-work text-xl max-sm:text-base">A UI/UX designer and student intern with a penchant for high-fidelity polish. I treat every interface like a magazine spread—meticulous hierarchy, intentional whitespace, and zero room for boring.</p>
+                    <p class="font-work text-xl max-sm:text-base">A UI/UX designer with a penchant for high-fidelity polish. I treat every interface like a magazine spread—meticulous hierarchy, intentional whitespace, and zero room for boring.</p>
                 </div>
                 <a href="#" class="group flex items-center justify-start font-display uppercase py-2 gap-4 w-[16.5rem] hover:text-accent transition-colors">
                     <span class="font-mono text-xl font-bold flex w-cover max-sm:text-base">READ THE FULL STORY</span>
@@ -57,7 +57,7 @@
                         <path d="M1.84998 12.6499L12.65 1.84993M1.25 1.25H13.25V13.25" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"/>
                     </svg>
                 </a> 
-             
+            
             </div>
         </div>
     </section>
@@ -72,10 +72,10 @@
             </div>
 
             <!-- PROJECT ITEM -->
-             <div class="w-full border-t">
+            <div id="projectsHover" class="w-full">
                 <a href="#">
-                    <div class="w-full">
-                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                    <div class="w-full border-t projectRows">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto projectRows">
                             <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
                                 <p class="font-mono max-sm:text-xs justify-center">2026</p>
                                 <h3 class="font-serif text-fluid-h3-serif project-content-fluid">PAPS PRO BARBERSHOP</h3>
@@ -87,7 +87,7 @@
                 </a>
                 <a href="#">
                     <div class="w-full">
-                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto projectRows">
                             <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
                                 <p class="font-mono max-sm:text-xs justify-center">2026</p>
                                 <h3 class="font-serif text-fluid-h3-serif project-content-fluid">POS AND INVENTORY SYSTEM</h3>
@@ -99,7 +99,7 @@
                 </a>
                 <a href="#">
                     <div class="w-full">
-                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto projectRows">
                             <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
                                 <p class="font-mono max-sm:text-xs justify-center">2026</p>
                                 <h3 class="font-serif text-fluid-h3-serif project-content-fluid">KWATRO</h3>
@@ -111,7 +111,7 @@
                 </a>
                 <a href="#">
                     <div class="w-full">
-                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto projectRows">
                             <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
                                 <p class="font-mono max-sm:text-xs justify-center">2025</p>
                                 <h3 class="font-serif text-fluid-h3-serif project-content-fluid">SIDEQUEST</h3>
@@ -123,7 +123,7 @@
                 </a>
                 <a href="#">
                     <div class="w-full">
-                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto">
+                        <div class="flex flex-grow space-evenly items-center max-sm:items-end py-6 border-b justify-center gap-auto projectRows">
                             <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 lg:justify-between items-start w-full">
                                 <p class="font-mono max-sm:text-xs justify-center">2024</p>
                                 <h3 class="font-serif text-fluid-h3-serif project-content-fluid">HOMIFY</h3>
@@ -232,8 +232,14 @@
                 </div>
             </div>
 
-            <div class="border-t overflow-hidden select-none animate-marquee">
-                <ul class="font-mono text-[4rem] flex flex-row justify-betweeen gap-[2rem] animate-marquee">
+            <div class="border-t overflow flex flex-row gap-[100%] select-none">
+                <ul class="font-mono text-[4rem] flex flex-row justify-betweeen gap-[2rem] marquee-scroll">
+                    <li class="shrink-0">DESIGNED WITH INTENT</li>
+                    <li>-</li>
+                    <li class="shrink-0">JAY FORD EST. 2026</li>
+                    <li>-</li>
+                </ul>
+                <ul class="font-mono text-[4rem] flex flex-row justify-betweeen gap-[2rem] marquee-scroll">
                     <li class="shrink-0">DESIGNED WITH INTENT</li>
                     <li>-</li>
                     <li class="shrink-0">JAY FORD EST. 2026</li>
@@ -252,6 +258,10 @@
         }
     }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="script.js"></script>
+    <script type="module" src="global.js"></script>
+    <script type="module" src="animations.js"></script>
 </body>
 </html>

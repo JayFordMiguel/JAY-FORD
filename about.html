@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Ford | ABOUT</title>
     <link rel="icon" type="image/x-icon" href="./assets/icons/jf-logo.svg">
-    <script type="module" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./src/input.css">
 </head>
@@ -13,16 +12,21 @@
 <body>
     <nav id="navbar-placeholder"></nav>
     <!-- HERO -->
-    <section>
-        <div class="section-fluid-px section-fluid-py flex flex-col md:flex-row gap-6 md:gap-12 md:items-end">
+    <section class="h-[100vh] flex flex-col justify-end">
+        <div id="aboutHero" class="section-fluid-px section-fluid-py flex flex-col md:flex-row gap-6 md:gap-12 md:items-end aboutHero">
             <div class="flex flex-col md:flex-1">
-                <p class="font-mono text-xs md:text-base">[VISUAL&GRAPHIC_DESIGNER]</p>
-                <h1 class="font-serif text-fluid-h1-serif">Defining the</h1>
-                <h1 class="font-display text-fluid-h1-script trim-text">Visual</h1>
-                
+                <div class="overflow-hidden">
+                    <p class="font-mono text-xs md:text-base reveal-text invisible">[VISUAL&GRAPHIC_DESIGNER]</p>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class="font-serif text-fluid-h1-serif reveal-text invisible">Defining the</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class="font-display text-fluid-h1-script reveal-text invisible">Visual</h1>
+                </div>
             </div>
-            <div class="md:flex-1">
-            <p class="font-work text-base lg:text-lg">I’m a UI/UX Designer and student intern currently navigating the intersection of functional logic and editorial aesthetics. I believe a digital product should work like a machine but look like a masterpiece.</p>
+            <div class="md:flex-1 overflow-hidden">
+                <p class="font-work text-base lg:text-xl reveal-text pb-4 invisible" >I’m a UI/UX Designer and student intern currently navigating the intersection of functional logic and editorial aesthetics. I believe a digital product should work like a machine but look like a masterpiece.</p>
             </div>
         </div>
 
@@ -36,57 +40,131 @@
             <div class="flex-1">
             <h2 class="font-serif text-fluid-h2-serif">Good design shouldn't <em>whisper</em>. It should <em>speak</em>.</h2>
             </div>
-            <div class="flex flex-col gap-6 flex-1">
-                <p class="font-work text-base lg:text-lg">I’m tired of the internet looking like a sea of blue buttons and safe grids. I believe that even a backend inventory system—the kind of stuff people call boring—deserves a visual edge. My goal isn't just to make things user-friendly; it’s to make them undeniable.</p>
-                <p class="font-work text-base hidden md:block lg:text-lg">Whether I'm mapping out the logic for a multi-branch bakery or polishing a brand's typography, I approach every project with the same obsession: Logic is the foundation, but the aesthetic is the soul. I don't just build interfaces; I build digital artifacts that people actually enjoy looking at.</p>
+            <div id="section2-description" class="flex flex-col gap-6 flex-1">
+                <p class="font-work text-base lg:text-xl">I’m tired of the internet looking like a sea of blue buttons and safe grids. I believe that even a backend inventory system—the kind of stuff people call boring—deserves a visual edge. My goal isn't just to make things user-friendly; it’s to make them undeniable.</p>
+                <p id="hidden-content" class="font-work text-base hidden md:block lg:text-xl">Whether I'm mapping out the logic for a multi-branch bakery or polishing a brand's typography, I approach every project with the same obsession: Logic is the foundation, but the aesthetic is the soul. I don't just build interfaces; I build digital artifacts that people actually enjoy looking at.</p>
+                <button id="see-more" class="font-mono md:hidden px-3 py-3">[ SEE MORE ]</button>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="flex flex-col gap-12 section-fluid-px section-fluid-py">
+        <div id="stackSection" class="flex flex-col gap-12 section-fluid-px section-fluid-py">
             <h2 class="font-serif text-fluid-h2-serif">The Stack</h2>
+            <div id="stackRowsWrapper" class="flex flex-col gap-12">
+                <div class="flex flex-col gap-3 md:flex-row md:items-end md:space-between md:gap-1 stackRows">
+                    <div class="flex flex-row items-end gap-1">
+                        <p class="font-mono text-xs trim-text lg:text-base reveal-text invisible">01</p>
+                        <h3 class="font-serif text-fluid-h3-serif trim-text reveal-text invisible">VISUALS</h3>
+                    </div>
+                    <svg width="100%" height="2" class="block md:w-fit grow-1 leaderLine">
+                    <line x1="0" y1="2" x2="100%" y2="2" 
+                            stroke="black" 
+                            stroke-width="2" 
+                            stroke-dasharray="4" />
+                    </svg>
+                    <p class="font-mono text-xs w-full text-end md:w-auto lg:text-base stackContent">[FIGMA, SPLINE, KRITA, PHOTOSHOP]</p>
+                </div>
+                <div class="flex flex-col gap-3 md:flex-row md:items-end md:space-between md:gap-1  stackRows">
+                    <div class="flex flex-row items-end gap-1">
+                        <p class="font-mono text-xs trim-text lg:text-base reveal-text">02</p>
+                        <h3 class="font-serif text-fluid-h3-serif trim-text reveal-text">BUILD</h3>
+                    </div>
+                    <svg width="100%" height="2" class="block md:w-fit grow-1 leaderLine">
+                    <line x1="0" y1="2" x2="100%" y2="2" 
+                            stroke="black" 
+                            stroke-width="2" 
+                            stroke-dasharray="4" />
+                    </svg>
+                    <p class="font-mono text-xs w-full text-end md:w-auto lg:text-base stackContent">[WEBFLOW, HTML5, CSS3, GITHUB]</p>
+                </div>
+                <div class="flex flex-col gap-3 md:flex-row md:items-end md:space-between md:gap-1  stackRows">
+                    <div class="flex flex-row items-end gap-1">
+                        <p class="font-mono text-xs trim-text lg:text-base reveal-text">03</p>
+                        <h3 class="font-serif text-fluid-h3-serif trim-text reveal-text">LOGIC</h3>
+                    </div>
+                    <svg width="100%" height="2" class="block md:w-fit grow-1 leaderLine">
+                    <line x1="0" y1="2" x2="100%" y2="2" 
+                            stroke="black" 
+                            stroke-width="2" 
+                            stroke-dasharray="4" />
+                    </svg>
+                    <p class="font-mono text-xs w-full text-end md:w-auto lg:text-base stackContent">[UI SYSTEMS, INVENTORY ARCHITECTURE]</p>
+                </div>
+            </div>
 
-            <div class="flex flex-col gap-3 md:flex-row md:items-end md:space-between md:gap-1">
-                <div class="flex flex-row items-end gap-1">
-                    <p class="font-mono text-xs trim-text lg:text-lg">01</p>
-                    <h3 class="font-serif text-fluid-h3-serif trim-text">VISUALS</h3>
-                </div>
-                <svg width="100%" height="2" class="block md:w-fit grow-1">
-                <line x1="0" y1="2" x2="100%" y2="2" 
-                        stroke="black" 
-                        stroke-width="2" 
-                        stroke-dasharray="4" />
-                </svg>
-                <p class="font-mono text-xs w-full text-end md:w-auto lg:text-lg">[FIGMA, SPLINE, KRITA, PHOTOSHOP]</p>
             </div>
-            <div class="flex flex-col gap-3 md:flex-row md:items-end md:space-between md:gap-1">
-                <div class="flex flex-row items-end gap-1">
-                    <p class="font-mono text-xs trim-text lg:text-lg">02</p>
-                    <h3 class="font-serif text-fluid-h3-serif trim-text">BUILD</h3>
-                </div>
-                <svg width="100%" height="2" class="block md:w-fit grow-1">
-                <line x1="0" y1="2" x2="100%" y2="2" 
-                        stroke="black" 
-                        stroke-width="2" 
-                        stroke-dasharray="4" />
-                </svg>
-                <p class="font-mono text-xs w-full text-end md:w-auto lg:text-lg ">[WEBFLOW, HTML5, CSS3, GITHUB]</p>
-            </div>
-            <div class="flex flex-col gap-3 md:flex-row md:items-end md:space-between md:gap-1">
-                <div class="flex flex-row items-end gap-1">
-                    <p class="font-mono text-xs trim-text lg:text-lg">03</p>
-                    <h3 class="font-serif text-fluid-h3-serif trim-text">LOGIC</h3>
-                </div>
-                <svg width="100%" height="2" class="block md:w-fit grow-1">
-                <line x1="0" y1="2" x2="100%" y2="2" 
-                        stroke="black" 
-                        stroke-width="2" 
-                        stroke-dasharray="4" />
-                </svg>
-                <p class="font-mono text-xs w-full text-end md:w-auto lg:text-lg ">[UI SYSTEMS, INVENTORY ARCHITECTURE]</p>
-            </div>
+        </div>
+    </section>
 
+    <section>
+        <div id="" class="section-fluid-px section-fluid-py flex flex-col gap-12">
+            <div>
+                <h2 class="font-serif text-fluid-h2-serif">The Evolution</h2>
+                <p class="font-mono text-xs lg:text-base">[ REVISION_HISTORY_v1.0 > v2.6 ]</p>
+            </div>
+            <div>
+                <div class="evo-timeline-indent flex flex-col gap-3">
+                    <div id="evoMainWrapper" class="flex flex-row relative">
+                        <div id="evoSpine" class="w-[1px] absolute h-full bg-black"></div>
+                        <div id="evoRowWrapper" class=" flex flex-col gap-[4.5rem]">
+                            <div class="flex flex-col gap-3 evoContentWrapper">
+                                <div class="flex flex-row items-center gap-3  evo-item">
+                                    <span class="h-[1px] evo-fluid-branch bg-black block" aria-hidden="true"></span>
+                                    <p class="font-mono text-xs lg:text-base">2024.01 // v1.0_INITIAL_BOOT</p>
+                                </div>
+                                <div class="evo-content-indent flex flex-col gap-3">
+                                    <h3 class="font-serif text-fluid-h3-serif evo-item">Homify (AR Interior & E-Commerce)</h3>
+                                    <p class="font-work text-base lg:text-xl evo-item">First contact with Figma. Navigating the basics of HCI through an AR-driven interior design concept. Learning that pixels have weight and interfaces have consequences.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-3  evoContentWrapper">
+                                <div class="flex flex-row items-center gap-3  evo-item">
+                                    <span class="h-[1px] evo-fluid-branch bg-black block" aria-hidden="true"></span>
+                                    <p class="font-mono text-xs lg:text-base">2025.06 // v1.5_SYSTEM_CRASH</p>
+                                </div>
+                                <div class="evo-content-indent flex flex-col gap-3">
+                                    <h3 class="font-serif text-fluid-h3-serif line-through decoration-1 md:decoration-2 evo-item">Gamified Student Freelancing Platform</h3>
+                                    <p class="font-work text-base lg:text-xl evo-item">The 'Capstone Pivot.' Designed a high-energy landing page for a student marketplace. The project was eventually scrapped and rebuilt from scratch—a masterclass in killing your darlings and starting over.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-3  evoContentWrapper">
+                                <div class="flex flex-row items-center gap-3 evo-item">
+                                    <span class="h-[1px] evo-fluid-branch bg-black block" aria-hidden="true"></span>
+                                    <p class="font-mono text-xs lg:text-base">2025.09 // v2.0_THE_EDITORIAL_PATCH</p>
+                                </div>
+                                <div class="evo-content-indent flex flex-col gap-3">
+                                    <h3 class="font-serif text-fluid-h3-serif evo-item">Pan de Beki (Bakery Branding)</h3>
+                                    <p class="font-work text-base lg:text-xl evo-item">The turning point. This is where I started leaning into editorial layouts and rigid design systems. Shifting away from 'standard UI' and toward a high-contrast, visual edge.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-3  evoContentWrapper">
+                                <div class="flex flex-row items-center gap-3  evo-item">
+                                    <span class="h-[1px] evo-fluid-branch bg-black block" aria-hidden="true"></span>
+                                    <p class="font-mono text-xs lg:text-base">2026.02 // v2.4_REAL_WORLD_LOGIC</p>
+                                </div>
+                                <div class="evo-content-indent flex flex-col gap-3">
+                                    <h3 class="font-serif text-fluid-h3-serif evo-item">Pap’s Pro Barbershop & Concept POS</h3>
+                                    <p class="font-work text-base lg:text-xl evo-item">Translating 'vibes' into functional tools. Designing for a local city staple and building deep-logic inventory systems. Proving that high-end aesthetics can coexist with high-density data.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-3  evoContentWrapper">
+                                <div class="flex flex-row items-center gap-3  evo-item">
+                                    <span class="h-[1px] evo-fluid-branch bg-black block" aria-hidden="true"></span>
+                                    <p class="font-mono text-xs lg:text-base">2026.04 // v2.6_CURRENT_STABLE</p>
+                                </div>
+                                <div class="evo-content-indent flex flex-col gap-3">
+                                    <h3 class="font-serif text-fluid-h3-serif evo-item">OJT / Portfolio Build</h3>
+                                    <p class="font-work text-base lg:text-xl evo-item">Currently interning and refining the stack. This portfolio is the latest commit. Optimized for logic, driven by the editorial spirit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -99,7 +177,7 @@
                 <div class="flex flex-col gap-3">
                     <p class="font-mono text-xs">// 01_Competitive Karaoke</p>
                     <p class="font-mono text-xs">// 02_Fry Screaming in the mall</p>
-                    <p class="font-mono text-xs">// 03_Debugging CSS until 3 AM</p>
+                    <p class="font-mono text-xs">// 03_Debugging GSAP until 3 AM</p>
                 </div>
             </div>
         </div>
@@ -172,8 +250,11 @@
         </div>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="script.js"></script>
+    <script type="module" src="global.js"></script>
+    <script type="module" src="animations.js"></script>
 </body>
 </html>
 
