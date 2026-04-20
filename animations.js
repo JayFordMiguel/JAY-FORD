@@ -125,8 +125,8 @@ if (evoWrapper) {
         evolTL.from(item,{
             clipPath: "inset(0% 100% 0% 0%)",
             duration: 2,
-            // ease: "power3.out",
-            ease: 'steps(${charCount})'
+            ease: "power3.out"
+            // ease: 'steps(${charCount})'
         })
     });
 }
