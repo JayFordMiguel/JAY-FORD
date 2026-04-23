@@ -1,24 +1,3 @@
-// fetch('components/navbar.html')
-//   .then(response => response.text())
-//   .then(data => {
-//     document.getElementById('navbar-placeholder').innerHTML = data;
-
-//     const menuToggle = document.getElementById('menu');
-//     const container = document.getElementById('nav-container');
-
-//     function toggleMenu(e) {
-//         e.preventDefault();
-//         container.classList.toggle('translate-x-full');
-//         if (container.classList.contains('translate-x-full')) {
-//             menuToggle.textContent = '[ MENU ]';
-//         } else {
-//             menuToggle.textContent = '[ CLOSE ]';
-//         }
-//     }
-
-//     menuToggle.addEventListener('click', toggleMenu);
-//   });
-
 fetch('components/navbar.html')
   .then(response => {
     if (!response.ok) throw new Error('Navbar not found'); // Safety check for GitHub Pages
@@ -31,10 +10,6 @@ fetch('components/navbar.html')
     const menuBtn = document.querySelector("#menu");
     const navContainer = document.querySelector("#nav-container");
     const navLinks = document.querySelectorAll("#nav-container li");
-
-    // Clear the Tailwind class so GSAP has total control
-    // navContainer.classList.remove('translate-x-full');
-    // gsap.set(navContainer, { xPercent: 100 });
 
     const menuTL = gsap.timeline({ paused: true, reversed: true });
 

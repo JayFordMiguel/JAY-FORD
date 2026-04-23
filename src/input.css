@@ -131,6 +131,11 @@ body {
     width:clamp(2rem, 0.944rem + 4.51vw, 5rem);
   }
 
+  /*WORKS GALLERY PAGE*/
+  .gallery-fluid-thumbnail {
+    height: clamp(13.625rem, 9.95rem + 15.68vw, 24.063rem);
+    /* width: clamp(20.438rem, 14.925rem + 23.52vw, 36.094rem); */
+  }
 }
 
 .seeMore #hidden-content {
