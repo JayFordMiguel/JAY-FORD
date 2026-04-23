@@ -7,12 +7,13 @@ fetch('components/navbar.html')
     document.getElementById('navbar-placeholder').innerHTML = data;
 
     // 1. Setup GSAP inside the fetch success block
+    const navLogo = document.querySelector("#nav-logo")
+
     const menuBtn = document.querySelector("#menu");
     const navContainer = document.querySelector("#nav-container");
     const navLinks = document.querySelectorAll("#nav-container li");
 
     const menuTL = gsap.timeline({ paused: true, reversed: true });
-
     menuTL
       .fromTo(navContainer, 
         {
@@ -60,3 +61,25 @@ function revealHidden() {
 
 seeMore.addEventListener('click', revealHidden);
 }
+
+// 1. Grab the elements
+const marquee = document.querySelector('.marquee-content');
+
+// 2. Clone the content to ensure it fills the width and loops seamlessly
+const clone = marquee.innerHTML;
+marquee.insertAdjacentHTML('beforeend', clone);
+
+// 3. Setup the animation
+gsap.to(".marquee-content", {
+    xPercent: -50,          // Move exactly half the width
+    ease: "none",           // Linear movement is essential for marquees
+    duration: 15,           // Adjust speed (higher = slower)
+    repeat: -1,             // Loop forever
+});
+
+const tween = gsap.to(".marquee-content", {
+    xPercent: -50,
+    ease: "none",
+    duration: 15,
+    repeat: -1
+});

@@ -23,7 +23,13 @@ function maskedRuveal(text) {
 }
 
 //LANDING PAGE ANIMATIONS
+const hero = document.querySelector('#hero')
 const indexProjs = document.getElementById('projectsHover');
+
+if (hero) {
+    const textRuveal = hero.querySelectorAll('.reveal-text')
+    maskedRuveal(textRuveal)
+}
 
 if (indexProjs) {
     const projRows = indexProjs.querySelectorAll('.projectRows');
