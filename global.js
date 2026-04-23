@@ -18,7 +18,6 @@ fetch('components/navbar.html')
       .fromTo(navContainer, 
         {
           xPercent: 100,
-          autoAplha: 0,
         },{
           xPercent: 0,
           duration: 0.4,
@@ -33,6 +32,8 @@ fetch('components/navbar.html')
 
     // 2. The Toggle Logic
     menuBtn.addEventListener("click", () => {
+        document.body.style.overflow = menuTL.reversed() ? "hidden" : "auto";
+
         if (menuTL.reversed()) {
             menuTL.play();
             menuBtn.innerText = "[ CLOSE ]";
@@ -41,6 +42,36 @@ fetch('components/navbar.html')
             menuBtn.innerText = "[ MENU ]";
         }
     });
+
+    function navRuveal (text) {
+        if (!text) return;
+
+        return gsap.fromTo (text, {
+            y: "-100%",
+            visibility: "hidden"
+        },
+        {
+            y: "0%",
+            visibility: "visible", 
+            duration: 1.2, 
+            ease: "power4.out", 
+            stagger: 0.3,
+            scrollTrigger: {
+                start: "top bottom",
+                trigger: text,
+                toggleActions: "play none none none",
+            }
+        }
+    );
+    }
+
+    const navbar = document.querySelector("#navigation");
+    if (navbar) {
+        const ruvealContent = navbar.querySelectorAll(".nav-ruveal");
+        console.log(navbar)
+        navRuveal(ruvealContent)
+    }
+
   })
   .catch(err => console.error("Navbar loading failed:", err));
 
