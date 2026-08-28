@@ -1,3 +1,50 @@
+// document.body.style.overflow = "hidden";
+
+// const preloaderTL = gsap.timeline();
+
+// // 2. Initial "Fake" progress (Simulates loading assets)
+// preloaderTL.to("#progress-bar", {
+//     width: "70%",
+//     duration: 2,
+//     ease: "power2.inOut"
+// });
+
+// window.addEventListener("load", () => {
+//     // 3. Finish the bar when the window (images, fetch, etc.) is fully ready
+//     preloaderTL.to("#progress-bar", {
+//         width: "100%",
+//         duration: 0.5,
+//         ease: "power4.out",
+//         onComplete: () => {
+            
+//             // 4. Subtle fade for the bar before the big move
+//             gsap.to("#preloader-bar-parent", {
+//                 opacity: 0,
+//                 duration: 0.3,
+//                 delay: 0.1,
+//                 onComplete: () => {
+                    
+//                     // 5. THE REVEAL: Slide up with high-end easing
+//                     gsap.to("#preloader", {
+//                         yPercent: -100,
+//                         duration: 1.1,
+//                         ease: "power4.inOut",
+//                         onComplete: () => {
+//                             // 6. Cleanup & Unlock
+//                             document.getElementById("preloader").style.display = "none";
+//                             document.body.style.overflow = "auto";
+                            
+//                             // 7. Refresh ScrollTrigger 
+//                             // Important because the layout shifted when preloader vanished
+//                             ScrollTrigger.refresh();
+//                         }
+//                     });
+//                 }
+//             });
+//         }
+//     });
+// });
+
 fetch('components/navbar.html')
   .then(response => {
     if (!response.ok) throw new Error('Navbar not found'); // Safety check for GitHub Pages
@@ -55,7 +102,7 @@ fetch('components/navbar.html')
             visibility: "visible", 
             duration: 1.2, 
             ease: "power4.out", 
-            stagger: 0.3,
+            stagger: 0.2,
             scrollTrigger: {
                 start: "top bottom",
                 trigger: text,
